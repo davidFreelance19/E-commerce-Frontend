@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <!-- Icons to support Material Design -->
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+  <style>
+    .main_section .splide {
+      padding: 0
+    }
+
+    .main_section .splide__arrow--next,
+    .main_section .splide__arrow--prev {
+      background: #0002;
+      border-radius: 100px;
+      padding: 10px;
+
+    }
+
+    .main_section .splide__arrow svg {
+      fill: #000;
+    }
+    .main_section .splide__arrow:hover:not(:disabled) svg {
+      fill: #0002
+    }
+    .main_section .splide__arrows {
+      position: absolute;
+      /* left: 0; */
+      right: 0;
+      top: -110px;
+      width: 120px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
