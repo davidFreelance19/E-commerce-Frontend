@@ -11,7 +11,7 @@ const NavegacionesPerfil = ({ visible, handleClickCerrarSesion }) => {
             {
                 visible && (
                     <div className="absolute right-0 top-7">
-                        <blockquote className="bg-[#000004] p-5 text-white rounded-md mt-4 hover:cursor-pointer flex flex-col gap-4">
+                        <blockquote className="bg-[#000004] p-5 text-white rounded-md mt-4 hover:cursor-pointer flex flex-col gap-4 relative z-50">
                             {
                                 user.role === 'admin' ? (
                                     <Link to={`/e-shop/dashboard/${user._id}/home`} className="flex items-center gap-3">
@@ -20,6 +20,7 @@ const NavegacionesPerfil = ({ visible, handleClickCerrarSesion }) => {
                                     </Link>
                                 ) : (
                                     <>
+                                    
                                         <div className="flex items-center gap-3">
                                             <AiOutlineUser size={20} />
                                             <p>Mi perfil</p>

@@ -8,6 +8,10 @@ import { StyledEngineProvider } from '@mui/material/styles';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
+import "primereact/resources/themes/lara-light-indigo/theme.css";   
+import 'primeicons/primeicons.css';
+import "primereact/resources/primereact.min.css";   
 import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/skyblue";
 import "@splidejs/react-splide/css/sea-green";

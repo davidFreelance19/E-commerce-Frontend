@@ -23,7 +23,7 @@ const VistaProducto = () => {
     )
     if (productosQuery.isFetching) return <p>Cargando...</p>
     return (
-        <div className='min-h-[550px] grid place-content-center'>
+        <div className='min-h-[550px] grid place-content-center max-w-[1240px] mx-auto mt-10 mb-20'>
             <ProductView data={productosQuery.data[0]} closeModal={closeModal} />
         </div>
     )

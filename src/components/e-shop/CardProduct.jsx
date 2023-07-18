@@ -14,14 +14,14 @@ const CardProduct = ({ data }) => {
         setIsOpen(true)
     }
     return (
-        <blockquote className="hover:cursor-pointer p-0">
+        <blockquote className="hover:cursor-pointer p-0 relative">
             <div className='min-w-[270px] min-h-[320px] flex flex-col gap-2'>
                 <div className="bg-gray-100 h-[250px] grid place-items-center rounded  p-6 place-content-center">
-                    <img src={`${import.meta.env.VITE_BACKEND_URL}/${data.images[0]}`} alt="img-product" className="w-auto max-h-[230px]" style={{
+                    <img src={`${import.meta.env.VITE_BACKEND_URL}/${data.images[0]}`} alt="img-product" className="max-w-[170px] w-auto max-h-[180px]" style={{
                         filter: 'brightness(1,1)',
                         mixBlendMode: 'multiply',
                     }} />
-                    <div className="absolute right-4 top-4">
+                    <div className="absolute right-3 top-3">
                         <AiOutlineHeart size={35} className="bg-white rounded-full p-2" />
                         <GrView size={35} className="bg-white rounded-full p-2 mt-2" onClick={() => isOpen ? setIsOpen(false) : setIsOpen(true)} />
                     </div>

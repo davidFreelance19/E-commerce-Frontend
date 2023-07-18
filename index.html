@@ -7,10 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite + React</title>
   <!-- Icons to support Material Design -->
-  <link
-  rel="stylesheet"
-  href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <style>
     .main_section .splide {
       padding: 0
@@ -27,16 +24,68 @@
     .main_section .splide__arrow svg {
       fill: #000;
     }
+
     .main_section .splide__arrow:hover:not(:disabled) svg {
       fill: #0002
     }
+
     .main_section .splide__arrows {
       position: absolute;
       /* left: 0; */
       right: 0;
-      top: -110px;
+      top: -70px;
       width: 120px;
-      height: 100px;
+    }
+
+    .container-description ul {
+      list-style-type: disc;
+      padding: 0 20px;
+
+    }
+
+    .container-description ol {
+      list-style-type: decimal;
+      padding: 0 20px;
+    }
+
+    .contenido {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 8;
+      overflow-y: hidden;
+    }
+
+    .p-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      --tw-bg-opacity: 1;
+      background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+      border: none;
+    }
+
+    @media (min-width: 1028px) {
+      .p-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    .p-galleria-content {
+      position: relative;
+    }
+
+    .p-galleria-indicators {
+      position: absolute;
+      right: 50%;
+      bottom: 0;
+      left: 50%;
+    }
+    .p-galleria .p-galleria-indicators .p-galleria-indicator button{
+      height: 10px;
+      width: 10px;
+    }
+    .p-galleria .p-galleria-indicators .p-galleria-indicator button{
+      width: 10px !important;
+      height: 10px !important;
     }
   </style>
 </head>

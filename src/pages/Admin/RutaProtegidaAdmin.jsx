@@ -18,11 +18,14 @@ const RutaProtegidaAdmin = () => {
         <>
             {isAuthenticated && user.role === 'admin' ? (
                 <>
+                    <DrawerAdmin >
+                        <div className="bg-gray-50 h-full">
+                            <div className="w-[90%] max-w-[1240px] mx-auto my-0">
+                                <Outlet />
+                            </div>
+                        </div>
+                    </DrawerAdmin>
 
-                    <div>
-                        <DrawerAdmin />
-                        <Outlet />
-                    </div>
                 </>
             ) : (
                 <Navigate to="/login" />

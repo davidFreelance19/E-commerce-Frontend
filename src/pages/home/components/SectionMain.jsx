@@ -6,7 +6,7 @@ import { Grid } from '@splidejs/splide-extension-grid';
 
 const SectionMain = ({ heading, textSection, arrowIcons, btnBottom, btnLeft, timer, productsData, grid }) => {
     return (
-        <div className='my-10 py-10 max-w-[1240px] w-[90%] mx-auto flex flex-col gap-10 border-b-[1px] last:border-none'>
+        <div className='my-10 py-10 max-w-[1240px] w-[90%] mx-auto flex flex-col gap-8 border-b-[1px] last:border-none '>
             <HeaderSectionMain heading={heading} textSection={textSection} arrowIcons={arrowIcons} btnLeft={btnLeft} timer={timer} />
             <section className="main_section">
                 <Splide

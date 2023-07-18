@@ -8,7 +8,7 @@ const HeaderSectionMain = ({ heading, textSection, btnLeft, timer, children }) =
                 <h2 className='text-lg font-semibold text-red-400'>{heading}</h2>
             </div>
 
-            <blockquote className="flex items-center justify-between">
+            <blockquote className="flex items-center justify-between min-h-[65px]">
                 <div className="flex items-center gap-4">
                     <p className='text-2xl font-semibold'>
                         {textSection}
